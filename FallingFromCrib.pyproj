@@ -30,9 +30,6 @@
     <Compile Include="arithmatic.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="BasicVideoWindow.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Bigone.py">
       <SubType>Code</SubType>
     </Compile>

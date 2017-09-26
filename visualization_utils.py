@@ -388,6 +388,7 @@ def visualize_boxes_and_labels_on_image_array(image,
           display_str = '{}: {}%'.format(
               class_name,
               int(100*scores[i]))
+          print(display_str)
         else:
           display_str = 'score: {}%'.format(int(100 * scores[i]))
         box_to_display_str_map[box].append(display_str)
@@ -400,12 +401,17 @@ def visualize_boxes_and_labels_on_image_array(image,
   # Draw all boxes onto image.
   for box, color in box_to_color_map.items():
     ymin, xmin, ymax, xmax = box
+    print (ymin)
+    print (xmin)
+    print (ymax)
+    print (xmax)
     if instance_masks is not None:
       draw_mask_on_image_array(
           image,
           box_to_instance_masks_map[box],
           color=color
       )
+      
     draw_bounding_box_on_image_array(
         image,
         ymin,

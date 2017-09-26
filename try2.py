@@ -35,8 +35,6 @@ while True:
         #Detect Crib
         #while cribDetected: 
         #    crib_detector(gray)
-
-
         continue
 
     #Detect Faces
